@@ -5,12 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="scripts/script.js"></script>
+
 	<title>JS</title>
 </head>
 <body>
 	<div class="content">
+		<h1>Enter data</h1>
 		<div class="content-input">
-			<input type="text" id="name" placeholder="User name" maxlength="19">
+			<input type="text" id="name" placeholder="User name" maxlength="19" pattern="^[А-Яа-яЁё\s]+$">
 			<input type="text" id="lastName" placeholder="User last name" maxlength="19">
 		</div>
 		<div class="content-button">

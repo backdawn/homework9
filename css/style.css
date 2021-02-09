@@ -1,13 +1,23 @@
 body{
-	background-color: #19A4C7;
+	background-color: #085C71;
 	display: flex;
+	height: 100vh;
 	justify-content: center;
+	align-items: center;
+	margin: 0;
 }
 .content{
 	padding: 10px;
 	display: flex;
 	flex-flow: column nowrap;
 	border-radius: 10px;
+	background-color: #101010;
+	padding: 0 50px 40px 50px;
+}
+h1{
+	text-transform: uppercase; 
+	text-align: center;
+	color: #fff;
 }
 .content-input{
 	display: flex;
@@ -19,18 +29,27 @@ body{
 }
 input{
 	outline: none;
-	border-radius: 8px;
+	border-radius: 24px;
 	height: 30px;
-	border: none;
 	width: 200px;
-	margin-bottom: 10px; 
+	margin-bottom: 20px; 
 	padding: 3px 15px;
 	font-size: 18px;
 	letter-spacing: 1px;
 	text-transform: capitalize;
+	color: #fff;
 }
 input:last-child{
-	margin-bottom: 20px; 
+	margin-bottom: 30px; 
+}
+input[type = "text"]{
+	border: 0;
+	background: none;
+	text-align: center;
+	border: 2px solid #3600FF;
+}
+input:focus{
+	border-color: #fff;
 }
 button{
 	position: relative;
@@ -41,11 +60,10 @@ button{
 	border: none;
 	border-radius: 50px;
 	color: #fff;
-	background-color: #9920FF; 
+	background-color: #2400FF; 
 	overflow: hidden;
 	z-index: 1;
 	outline: none;
-	box-shadow: 5px 5px 15px -5px #000000;
 	letter-spacing: 2px;
 	cursor: pointer;
 }
@@ -57,7 +75,7 @@ button:before{
 	content: '';
 	top: 0;
 	left: 0;
-	background-color: #8F17F3;
+	background-color: #3012EA;
 	transition: .5s;
 	z-index: -1;	
 }
